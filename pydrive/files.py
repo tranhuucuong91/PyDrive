@@ -23,8 +23,10 @@ class ApiRequestError(IOError):
 class FileNotDownloadableError(RuntimeError):
     """Error trying to download file that is not downloadable."""
 
+
 class FileNotExistError(RuntimeError):
     """Error while delete NULL file."""
+
 
 def LoadMetadata(decoratee):
     """Decorator to check if the file has metadata and fetches it if not.
